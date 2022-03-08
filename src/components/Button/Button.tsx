@@ -1,15 +1,15 @@
 import React from "react";
-import {View} from "react-native";
+import {View, Text} from "react-native";
 import {Button} from "react-native-elements";
 
 export interface ButtonProps {
-  label: string;
+  label?: string;
 }
 
 const Buttons = (props: ButtonProps) => {
   return (
     <View>
-      <Button>Dismiss</Button>
+      <Button><Text>Dismiss</Text></Button>
     </View>
   );
 };
